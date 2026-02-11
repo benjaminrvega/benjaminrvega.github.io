@@ -1,0 +1,148 @@
+<!doctype html>
+
+<!--
+Built and maintained by Benjamin R. Vega.
+This site documents my ongoing SOC analyst learning and lab work.
+-->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Benjamin R. Vega | SOC Analyst Portfolio</title>
+  <meta name="description" content="Benjamin R. Vega — SOC Analyst / Cybersecurity Analyst. Blue team labs focused on detection, log analysis, and incident response." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; line-height: 1.5; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 40px 20px; }
+    header { padding: 28px 0; border-bottom: 1px solid #e5e7eb; }
+    h1 { margin: 0 0 8px; font-size: 34px; }
+    .subtitle { margin: 0; font-size: 18px; color: #374151; }
+    .chips { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { border: 1px solid #e5e7eb; border-radius: 999px; padding: 6px 10px; font-size: 13px; color: #111827; background: #fafafa; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 22px; }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card { border: 1px solid #e5e7eb; border-radius: 14px; padding: 16px; background: #fff; }
+    h2 { margin: 0 0 10px; font-size: 18px; }
+    p { margin: 0 0 10px; }
+    a { color: inherit; text-decoration: underline; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
+    .links a { text-decoration: none; border: 1px solid #e5e7eb; padding: 10px 12px; border-radius: 10px; }
+    .links details {
+      position: relative;
+    }
+    .resume-menu {
+      position: relative;
+    }
+    .resume-dropdown {
+      position: absolute;
+      top: 110%;
+      left: 0;
+      background: #fff;
+      padding: 8px;
+      border: 1px solid #e5e7eb;
+      border-radius; 10px;
+      min-width: 140px;
+      display: flex;
+      flex direction; column;
+      gap; 8px;
+      z-index: 10;
+    }
+    .resume-dropdown a {
+      text-decoration: none;
+      border: 1px solid #e5e7eb;
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+    .btn {
+      cursor: pointer;
+      display: inline-block;
+      border: 1px solid #e5e7eb;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: normal;
+    }
+    .muted { color: #6b7280; font-size: 14px; }
+    footer { margin-top: 28px; padding-top: 18px; border-top: 1px solid #e5e7eb; }
+    ul { margin: 8px 0 0 18px; padding: 0; }
+    li { margin: 6px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Benjamin R. Vega</h1>
+      <p class="subtitle">SOC Analyst | Cybersecurity Analyst</p>
+      <div class="chips">
+        <span class="chip">Detection & Alert Triage</span>
+        <span class="chip">Log Analysis</span>
+        <span class="chip">Incident Response</span>
+        <span class="chip">SIEM Labs</span>
+        <span class="chip">Windows & Linux</span>
+      </div>
+      <div class="links">
+        <a href="https://github.com/benjaminrvega" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/benjaminraulvega" target="_blank">LinkedIn</a>
+        <details class="resume-menu">
+          <summary class="btn">Resume</summary>
+          
+          <div class="resume-dropdown">
+            <a href="/assets/resume/Benjamin Vega_SOCAnalystResume.pdf" targer="_blank" rel="noopener">
+          PDF
+            </a>
+
+            <a href="/assets/resume/Benjamin Vega_SOCAnalystResume.docx" targer="_blank" rel="noopener">
+          Word
+            </a>
+          </div>
+        </details>
+      </div>
+      <p class="muted" style="margin-top:12px;">
+        This site is my personal cybersecurity lab portfolio. Projects will highlight detection, telemetry, and SOC workflows.
+      </p>
+    </header>
+
+    <main class="grid">    
+      <section class="card">
+        <h2>About</h2>
+        <p>
+          I build hands-on blue team labs that mirror real SOC work, including log ingestion, alert triage, incident investigation,
+          and clear written findings.
+        </p>
+        <p class="muted">Currently building my first set of public projects. Repos will appear here as they go live.</p>
+      </section>
+
+      <section class="card">
+        <h2>What you’ll find here</h2>
+        <ul>
+          <li>End to end lab writeups (setup, telemetry, detections, investigation)</li>
+          <li>SIEM focused exercises (queries, rules, dashboards)</li>
+          <li>Incident reports</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Featured Projects</h2>
+        <p class="muted">Coming next:</p>
+        <ul>
+          <li>Endpoint telemetry lab (Windows + Sysmon for SIEM)</li>
+          <li>Authentication anomalies investigation (brute force & impossible travel patterns)</li>
+          <li>Detection as code repositories covering (rules + tests + documentation)</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:vega.benjamin@gmail.com">vega.benjamin@gmail.com</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p class="muted">© <span id="y"></span> Benjamin R. Vega</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
